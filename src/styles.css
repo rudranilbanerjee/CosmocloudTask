@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.display {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.block {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  border-top: none;
+  border-right: none;
+  background-color: ghostwhite;
+  margin: 10px;
+}
+.block .field {
+  display: flex;
+  justify-content: flex-start;
+  gap: 30px;
+  padding: 5px;
+  background-color: ghostwhite;
+}
+.block .field:hover {
+  background-color: lightgray;
+}
+.block .field:hover + .addiInfo {
+  display: "flex";
+}
+.block .field .addiInfo {
+  display: none;
+  background-color: green;
+  gap: 10px;
+}
+.block .field .addiInfo:hover {
+  display: "flex";
+}
+.block .field .addiInfo span {
+  display: flex;
+  gap: 6px;
+}
+.field span button {
+  width: 35px;
+  font-size: 20px;
+  height: 24px;
+}
+.nested {
+  /* border: 1px solid black; */
+  padding: 5px;
+  /* background-color: gray; */
+}
