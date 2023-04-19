@@ -31,12 +31,8 @@
 .block .field:hover {
   background-color: lightgray;
 }
-.block .field:hover + .addiInfo {
-  display: "flex";
-}
 .block .field .addiInfo {
-  display: none;
-  background-color: green;
+  display: flex;
   gap: 10px;
 }
 .block .field .addiInfo:hover {
