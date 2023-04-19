@@ -7,34 +7,29 @@ export const ADD_NESTED_FIELD = "ADD_NESTED_FIELD";
 export const SAVE_DATA = "SAVE_DATA";
 
 export const addField = () => ({
-  type: ADD_FIELD
+  type: ADD_FIELD,
 });
 
 export const deleteField = (fieldId) => ({
   type: DELETE_FIELD,
-  payload: fieldId
+  payload: fieldId,
 });
 
 export const updateFieldType = (fieldId, fieldType) => ({
   type: UPDATE_FIELD_TYPE,
-  payload: { fieldId, fieldType }
+  payload: { fieldId, fieldType },
 });
 
 export const updateFlagType = (fieldId) => ({
   type: UPDATE_FLAG_TYPE,
-  payload: fieldId
+  payload: fieldId,
 });
 export const updateFieldName = (fieldId, newName) => ({
   type: UPDATE_FIELD_NAME,
-  payload: { fieldId, newName }
+  payload: { fieldId, newName },
 });
 
 export const addNestedField = (fieldId, fieldType) => ({
   type: ADD_NESTED_FIELD,
-  payload: { fieldId, fieldType }
-});
-
-export const saveData = (data) => ({
-  type: SAVE_DATA,
-  payload: data
+  payload: { fieldId, fieldType },
 });

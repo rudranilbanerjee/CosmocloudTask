@@ -5,7 +5,6 @@ import {
   UPDATE_FIELD_TYPE,
   UPDATE_FLAG_TYPE,
   ADD_NESTED_FIELD,
-  SAVE_DATA
 } from "../actions/index";
 import useTraverseTree from "../hooks/useTraverseTree";
 const initialState = {
@@ -83,11 +82,6 @@ const fieldReducer = (state = initialState, action) => {
           field = addNestedNode(field, action.payload.fieldId);
           return field;
         })
-      };
-    }
-    case SAVE_DATA: {
-      return {
-        ...state
       };
     }
     default:

@@ -7,7 +7,7 @@ import {
   updateFieldType,
   updateFlagType,
   updateFieldName,
-  addNestedField
+  addNestedField,
 } from "../actions/index";
 const FieldForm = ({ fields }) => {
   console.log(fields, "ihuubgu");
@@ -73,7 +73,10 @@ const FieldForm = ({ fields }) => {
                 {field.type === "object" && (
                   <button
                     onClick={() => handleAddNestedField(field.id, field.type)}
-                  ></button>
+                  >
+                    {" "}
+                    +
+                  </button>
                 )}
                 <span>
                   Required
